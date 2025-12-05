@@ -4,10 +4,13 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import SearchBar from './components/SearchBar/SearchBar';
 import CategoryFilter from './components/CategoryFilter/CategoryFilter';
+import { categorias, posts } from './data/posts';
+import PostGrid from './components/PostGrid/PostGrid';
 
 function App() {
 
   const [busqueda, setBusqueda] = useState("");
+  const [categoriaActiva, setCategoriaActiva] = useState("Todas");
 
   const enlaces = [
     { texto: "Inicio", url: "/" },
@@ -31,7 +34,12 @@ function App() {
           />
 
           <CategoryFilter
+            categorias={categorias}
+            categoriaActiva={categoriaActiva}
+            onCambiarCategoria={setCategoriaActiva}
+          />
 
+          <PostGrid
           />
         </div>
       </main>
