@@ -1,0 +1,47 @@
+.user-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.user-card-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+    text-align: center;
+}
+
+.user-card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.user-card-body h3 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+}
+
+.user-email {
+    color: #666;
+    margin: 0 0 0.5rem 0;
+}
+
+.user-rol {
+    color: #999;
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+}
+
+.user-card-footer {
+    padding: 1rem;
+    background: #f8f9fa;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
